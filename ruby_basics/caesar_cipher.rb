@@ -1,18 +1,11 @@
+# frozen_string_literal: true
+
 def caesar_cipher(string, shift)
-  shift %= 26
   string.codepoints.map do |char|
-    # 65 - 90 A-Z
-    # 97 - 122 a-z
-    if char.between?(65, 90)
-      new_char = char + shift
-      new_char -= 26 if new_char > 90
-      new_char += 26 if new_char < 65
-      new_char.chr
-    elsif char.between?(97, 122)
-      new_char = char + shift
-      new_char -= 26 if new_char > 122
-      new_char += 26 if new_char < 97
-      new_char.chr
+    if char.between?(65, 90) # 65 - 90 A-Z
+      ((char + shift - 65) % 26 + 65).chr
+    elsif char.between?(97, 122) # 97 - 122 a-z
+      ((char + shift - 97) % 26 + 97).chr
     else
       char.chr
     end
