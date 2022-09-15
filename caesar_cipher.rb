@@ -11,5 +11,3 @@ def caesar_cipher(string, shift)
     end
   end.join
 end
-
-puts caesar_cipher('What a string!', 1000)
