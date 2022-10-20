@@ -1,3 +1,5 @@
+[![Ruby](https://github.com/shiraze/ruby-exercises/actions/workflows/ruby.yml/badge.svg)](https://github.com/shiraze/ruby-exercises/actions/workflows/ruby.yml)
+
 # The Odin Project Ruby Exercises
 
 ## About this repository
