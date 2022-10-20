@@ -6,5 +6,6 @@ task default: :spec
 
 desc 'Run specs'
 RSpec::Core::RakeTask.new(:spec) do |t|
-  t.pattern = ['**/*_spec.rb']
+  t.pattern = ['spec/**/*_spec.rb', 'ruby_basics/**/*_spec.rb']
+  t.verbose = false
 end
